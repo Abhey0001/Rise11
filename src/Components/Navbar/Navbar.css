@@ -1,0 +1,134 @@
+.main-section{
+    display: grid;
+    /* justify-content: space-between; */
+    grid-template-columns:auto auto;
+    /* border: 3px solid black; */
+    background-image: linear-gradient(to right, purple , red);
+    color: white;
+    /* height:12vh; */
+}
+.dropdown{
+    display: none;
+}
+
+  
+.section1{
+    display: grid;
+    grid-template-columns:auto auto auto;
+}
+.section2{
+    display: flex;
+    /* padding-top: 1rem; */
+    border: 3px solid black;
+    padding: 10px;
+    margin-top: 0;
+}
+.section3{
+    display:flex;
+    
+    /* justify-content: space-between; */
+}
+.bordersec3{
+    border: 3px solid black;
+}
+li{
+
+    padding:0 14px;
+    list-style: none;
+}
+li:hover{
+    color:black;
+    /* font-size:1.1rem; */
+}
+.colorsection4{
+    /* width: 100%; */
+    border: 3px solid black;
+    /* border-right: 0px; */
+}
+.section4{
+    display: flex;
+    /* width:100%; */
+    
+
+}
+/* .name{
+    display: flex;
+    align-items: flex-end;
+} */
+.section5{
+    margin-top:0;
+    border: 3px solid black;
+    /* display:flex; */
+    /* justify-content:flex-end; */
+    /* box-sizing: border-box; */
+}
+.section6{
+    display: flex;
+}
+@media screen and (max-width: 1200px) {
+    .main-section {
+        font-size: 1rem;
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    .main-section {
+        font-size: 0.6rem;
+    }
+    .section3{
+        /* align-content:center; */
+        /* justify-items: center; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* width: 10%; */
+    }
+    .section5{
+        width: 100%;
+    }
+    
+  }
+@media screen and (max-width: 900px) {
+    .main-section{
+        display: grid;
+        grid-template-columns: 5fr 5fr 1fr;
+        /* border: 10px solid black; */
+    }
+    .bordersec3{
+        border:0px;
+    }
+    .colorsection4{
+        display: none;
+    }
+    .section5{
+        /* width: 100%; */
+       border:0px;
+    }
+    .colorsection4{
+        border: 0px;
+    }
+    .section2{
+        border:0px;
+    }
+    
+  }
+  @media screen and (max-width: 550px) {
+    .main-section{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .bordersec3{
+        display: none;
+    }
+} 
+@media screen and (max-width: 410px){
+    .main-section{
+        /* background-color: black; */
+        /* width: 100vw; */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .signin{
+        display: none;
+    }
+}
